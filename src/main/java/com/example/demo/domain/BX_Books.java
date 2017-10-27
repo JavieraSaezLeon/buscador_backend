@@ -14,58 +14,86 @@ import javax.persistence.Table;
  *
  * @author javiera
  */
-@Table(name = "BX_Books")
+@Table(name = "bx_books")
 @Entity
 public class BX_Books {
     
     @Id
-    @Column(name = "ISBN")
-    private String ISBN;
-    private String Book_Title;
-    private String Book_Author;
-    private int Year_Of_Publication;
-    private String Publisher;
+    @Column(name = "isbn")
+    private String isbn;
+    private String booktitle;
+    private String bookauthor;
+    private int yearofpublication;
+    private String publisher;
+    private String imageurls;
+    private String imageurlm;
+    private String imageurll;
 
-    public String getISBN() {
-        return ISBN;
+    public String getIsbn() {
+        return isbn;
     }
 
-    public void setISBN(String ISBN) {
-        this.ISBN = ISBN;
+    public void setIsbn(String isbn) {
+        this.isbn = isbn;
     }
 
-    public String getBook_Title() {
-        return Book_Title;
+    public String getBooktitle() {
+        return booktitle;
     }
 
-    public void setBook_Title(String Book_Title) {
-        this.Book_Title = Book_Title;
+    public void setBooktitle(String booktitle) {
+        this.booktitle = booktitle;
     }
 
-    public String getBook_Author() {
-        return Book_Author;
+    public String getBookauthor() {
+        return bookauthor;
     }
 
-    public void setBook_Author(String Book_Author) {
-        this.Book_Author = Book_Author;
+    public void setBookauthor(String bookauthor) {
+        this.bookauthor = bookauthor;
     }
 
-    public int getYear_Of_Publication() {
-        return Year_Of_Publication;
+    public int getYearofpublication() {
+        return yearofpublication;
     }
 
-    public void setYear_Of_Publication(int Year_Of_Publication) {
-        this.Year_Of_Publication = Year_Of_Publication;
+    public void setYearofpublication(int yearofpublication) {
+        this.yearofpublication = yearofpublication;
     }
 
     public String getPublisher() {
-        return Publisher;
+        return publisher;
     }
 
-    public void setPublisher(String Publisher) {
-        this.Publisher = Publisher;
+    public void setPublisher(String publisher) {
+        this.publisher = publisher;
     }
 
+    public String getImageurls() {
+        return imageurls;
+    }
+
+    public void setImageurls(String imageurls) {
+        this.imageurls = imageurls;
+    }
+
+    public String getImageurlm() {
+        return imageurlm;
+    }
+
+    public void setImageurlm(String imageurlm) {
+        this.imageurlm = imageurlm;
+    }
+
+    public String getImageurll() {
+        return imageurll;
+    }
+
+    public void setImageurll(String imageurll) {
+        this.imageurll = imageurll;
+    }
+
+    
     public BX_Books() {
     }
        
