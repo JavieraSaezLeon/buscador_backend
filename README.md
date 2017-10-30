@@ -1,4 +1,4 @@
-# buscador_backend
+# Buscador BackEnd
 
 ## Clonar buscador BackEnd
 - git clone https://github.com/JavieraSaezLeon/buscador_backend.git
