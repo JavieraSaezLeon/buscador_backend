@@ -12,6 +12,9 @@
 - Instalar booksd.sql en MySQL
 
 ## Ejecutar BackEnd
+### IDE
+  - Ejecutar por medio de IDE Netbeans
+### Por consola
 - cd buscador_backend
 - mvn clean install
 - cd target
