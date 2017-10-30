@@ -17,6 +17,6 @@
 - java jar target/-0.0.1-SNAPSHOT.jar -h
 - comprobar en http://localhost:8090/
 
-##Referencias
+## Referencias
 
 Para mayor referencias de como funciona el Front dirigirse a la wiki del proyecto: https://github.com/JavieraSaezLeon/buscador_backend/wiki
