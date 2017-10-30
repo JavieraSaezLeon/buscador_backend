@@ -1,5 +1,9 @@
 # Buscador BackEnd
 
+## Requisitos
+- maven
+- Java 7
+
 ## Clonar buscador BackEnd
 - git clone https://github.com/JavieraSaezLeon/buscador_backend.git
 
