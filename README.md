@@ -14,6 +14,7 @@
 ## Ejecutar BackEnd
 - cd buscador_backend
 - mvn clean install
+- cd target
 - java jar demo-0.0.1-SNAPSHOT.jar -h
 - comprobar en http://localhost:8090/
 
