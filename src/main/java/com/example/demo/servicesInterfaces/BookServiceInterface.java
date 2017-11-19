@@ -29,4 +29,6 @@ public interface BookServiceInterface {
     
     public List<BX_Books> findAllByWord(String word);
     
+    public List<BX_Books> findAllByLucene(String word);
+    
 }

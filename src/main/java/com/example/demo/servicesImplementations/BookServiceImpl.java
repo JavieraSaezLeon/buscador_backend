@@ -7,10 +7,16 @@ package com.example.demo.servicesImplementations;
 
 import com.example.demo.domain.BX_Books;
 import com.example.demo.domain.Query;
+import com.example.demo.lucene.Index;
 import com.example.demo.repositoriesInterface.BookRepositoryInterface;
 import com.example.demo.servicesInterfaces.BookServiceInterface;
+import java.io.IOException;
+import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+import org.apache.lucene.queryParser.ParseException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -74,6 +80,22 @@ public class BookServiceImpl implements BookServiceInterface{
             }
         }
         return responseBooks;
+    }
+
+    @Override
+    public List<BX_Books> findAllByLucene(String word) {
+        List<BX_Books> books = new ArrayList<BX_Books>();
+        Index index = new Index();
+        try {
+            books = index.searchInIndex(word);
+        } catch (IOException ex) {
+            Logger.getLogger(BookServiceImpl.class.getName()).log(Level.SEVERE, null, ex);
+        } catch (ParseException ex) {
+            Logger.getLogger(BookServiceImpl.class.getName()).log(Level.SEVERE, null, ex);
+        } catch (SQLException ex) {
+            Logger.getLogger(BookServiceImpl.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        return books;
     }
     
 }

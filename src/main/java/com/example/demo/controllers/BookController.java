@@ -73,7 +73,7 @@ public class BookController {
     @ResponseStatus(HttpStatus.OK)
     @PostMapping(value = "/books/word")
     public List<BX_Books> getByWord(@RequestBody Query query) {
-        List<BX_Books> books = bookServiceInterface.findAllByWord(query.getQuery());
+        List<BX_Books> books = bookServiceInterface.findAllByLucene(query.getQuery());
         return books;
     }
 }
